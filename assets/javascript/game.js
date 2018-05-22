@@ -1,3 +1,5 @@
+// To whom it may concern: THIS DOESN'T WORK
+
 $(document).ready(function () {
 
     var wins = 0;
