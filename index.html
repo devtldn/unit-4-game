@@ -6,27 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <script type="text/css" src="/assets/css/style.css"></script>
-    <script type="text/javascript" src="/assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     
     <title>CRYSTALS, NOT ROCKS</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-            
-            </div>
-            <div class="col-sm-4">
-                <h1 class="display-4">
-                    Crystals Collector
-                </h1>
-            </div>
-            <div class="col-sm-4">
-            
-            </div>
-        </div>
+    <div class="container text-center">
         <br>
 
         <div class="row">
@@ -34,7 +22,24 @@
             
             </div>
             <div class="col-sm-6">
-                <h5>Instructions:</h5>
+                <h1 class="display-4">
+                    Crystals Collector
+                </h1>
+            </div>
+            <div class="col-sm-3">
+            
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-3">
+            
+            </div>
+            <div class="col-sm-6">
+                <h4>Instructions:</h4>
             </div>
             <div class="col-sm-3">
             
@@ -42,38 +47,52 @@
         </div>
         
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-1">
     
             </div>
-            <div class="col-sm-6">
-                <p>
+            <div class="col-sm-10">
+                <h6>
                     You will be given a random number at the start of the game.
                     <br> There are four crystals below. By clicking on a crysal you will add a specific amount of points to your
                     total score.
                     <br> You win the game by matching your total score to a random number. You lose if your total score exceed the
                     random number.
-                    <br>The value of each crytal is hidden from you until you click on it.
+                    <br>The value of each crystal is hidden from you until you click on it.
                     <br> Each time when the game starts, the game will change the values of each crystal.
-                </p>
+                </h6>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-1">
     
             </div>
         </div>
         <br>
+        <br>
 
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-2">
             
             </div>
-            <div class="col-sm-6">
-                <!--Jewels go here-->
-                <div id="jewels"></div>
+            <div class="col-sm-8">
+                <div id="crystal-buttons">
+                    <button id="grn-cr">
+                        <img src="https://image.ibb.co/dUFZO8/icon1_v1.png" alt="Green Crystal">
+                    </button>
+                    <button id="yllw-cr">
+                        <img src="https://image.ibb.co/cMaCAo/icon3_v1.png" alt="Yellow Crystal">
+                    </button>
+                    <button id="rd-cr">
+                        <img src="https://image.ibb.co/kLkCAo/icon4_v1.png" alt="Red Crystal">
+                    </button>
+                    <button id="bl-cr">
+                        <img src="https://image.ibb.co/gU3cbT/icon5_v1.png" alt="Blue Crystal">
+                    </button>
+                </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
             
             </div>
         </div>
+        <br>
         <br>
 
         <div class="row">
@@ -81,15 +100,35 @@
 
             </div>
             <div class="col-sm-3">
-                <!--Your pointboard goes here-->
-                <div id="player-pts"></div>
+                <div>
+                    <h4>Your current total:</h4>
+                </div>
+                <div id="your-total">
+
+                </div>
             </div>
             <div class="col-sm-3">
-                <!--AI points go here-->
-                <div id="ai-pts"></div>
+                <div>
+                    <h4>Points to match:</h4>
+                </div>
+                <div id="ai-total">
+
+                </div>
             </div>
             <div class="col-sm-3">
             
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-4">
+                <h5>Wins: </h5>
             </div>
         </div>
 
